@@ -18,6 +18,7 @@ import ipoteka from "./assets/ipoteka.png";
 import ipoteka1 from "./assets/ipoteka1.png";
 import heart1 from "./assets/heart1.png";
 import switch1 from "./assets/switch1.png";
+import thif1 from "./assets/thif1.png";
 import { LS, LSKeys } from "./ls";
 import { appSt } from "./style.css";
 import { Gap } from "@alfalab/core-components/gap";
@@ -182,6 +183,29 @@ export const App = () => {
             }}
           >
             <div style={{ display: "flex", gap: "16px", alignItems: "center" }}>
+              <img src={thif1} height={48} width={48} alt="" />
+              <div style={{ display: "flex", flexDirection: "column" }}>
+                <Typography.Text
+                  view="primary-medium"
+                  color="primary"
+                  weight="bold"
+                >
+                  Защита от мошенников
+                </Typography.Text>
+                <Typography.Text view="primary-small" color="secondary">
+                  Можете подключить Альфа-Мобайл, и спам больше не побеспокоит
+                </Typography.Text>
+              </div>
+            </div>
+          </div>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              padding: "16px",
+            }}
+          >
+            <div style={{ display: "flex", gap: "16px", alignItems: "center" }}>
               <img src={heart1} height={48} width={48} alt="" />
               <div style={{ display: "flex", flexDirection: "column" }}>
                 <Typography.Text
@@ -216,29 +240,6 @@ export const App = () => {
                 </Typography.Text>
                 <Typography.Text view="primary-small" color="secondary">
                   Вы выбираете, что хотите видеть
-                </Typography.Text>
-              </div>
-            </div>
-          </div>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              padding: "16px",
-            }}
-          >
-            <div style={{ display: "flex", gap: "16px", alignItems: "center" }}>
-              <img src={switch1} height={48} width={48} alt="" />
-              <div style={{ display: "flex", flexDirection: "column" }}>
-                <Typography.Text
-                  view="primary-medium"
-                  color="primary"
-                  weight="bold"
-                >
-                  Защита от мошенников
-                </Typography.Text>
-                <Typography.Text view="primary-small" color="secondary">
-                  Можете подключить Альфа-Мобайл, и спам больше не побеспокоит
                 </Typography.Text>
               </div>
             </div>
@@ -493,6 +494,25 @@ export const App = () => {
           style={{ display: "flex", flexDirection: "column", padding: "16px" }}
         >
           <div style={{ display: "flex", gap: "16px", alignItems: "center" }}>
+            <img src={thif1} height={48} width={48} alt="" />
+            <div style={{ display: "flex", flexDirection: "column" }}>
+              <Typography.Text
+                view="primary-medium"
+                color="primary"
+                weight="bold"
+              >
+                Защита от мошенников
+              </Typography.Text>
+              <Typography.Text view="primary-small" color="secondary">
+                Можете подключить Альфа-Мобайл, и спам больше не побеспокоит
+              </Typography.Text>
+            </div>
+          </div>
+        </div>
+        <div
+          style={{ display: "flex", flexDirection: "column", padding: "16px" }}
+        >
+          <div style={{ display: "flex", gap: "16px", alignItems: "center" }}>
             <img src={heart1} height={48} width={48} alt="" />
             <div style={{ display: "flex", flexDirection: "column" }}>
               <Typography.Text
@@ -523,25 +543,6 @@ export const App = () => {
               </Typography.Text>
               <Typography.Text view="primary-small" color="secondary">
                 Вы выбираете, что хотите видеть
-              </Typography.Text>
-            </div>
-          </div>
-        </div>
-        <div
-          style={{ display: "flex", flexDirection: "column", padding: "16px" }}
-        >
-          <div style={{ display: "flex", gap: "16px", alignItems: "center" }}>
-            <img src={switch1} height={48} width={48} alt="" />
-            <div style={{ display: "flex", flexDirection: "column" }}>
-              <Typography.Text
-                view="primary-medium"
-                color="primary"
-                weight="bold"
-              >
-                Защита от мошенников
-              </Typography.Text>
-              <Typography.Text view="primary-small" color="secondary">
-                Можете подключить Альфа-Мобайл, и спам больше не побеспокоит
               </Typography.Text>
             </div>
           </div>
