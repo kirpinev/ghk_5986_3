@@ -98,9 +98,7 @@ export const App = () => {
   const [step, setStep] = useState(1);
 
   const submit = () => {
-    window.gtag("event", "5986_get_sub", {
-      variant_name: "5986_3",
-    });
+    window.gtag("event", "5986_activate_3");
 
     LS.setItem(LSKeys.ShowThx, true);
     setThx(true);
@@ -304,7 +302,10 @@ export const App = () => {
                 </Typography.Text>
                 <Gap size={16} />
                 <div
-                  onClick={() => setIsMoreClicked(true)}
+                  onClick={() => {
+                    setIsMoreClicked(true);
+                    window.gtag("event", "5986_participate_3");
+                  }}
                   style={{
                     padding: "4px 16px",
                     backgroundColor: "black",
@@ -407,7 +408,15 @@ export const App = () => {
 
       {step === 1 && (
         <div className={appSt.bottomBtn}>
-          <ButtonMobile block view="primary" href="" onClick={() => setStep(2)}>
+          <ButtonMobile
+            block
+            view="primary"
+            href=""
+            onClick={() => {
+              setStep(2);
+              window.gtag("event", "5986_gotoAS_3");
+            }}
+          >
             К Альфа-Смарту
           </ButtonMobile>
         </div>
